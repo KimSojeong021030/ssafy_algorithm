@@ -6,8 +6,7 @@ for tc in range(1, T + 1):
     N, K = map(int, input().split())
 
     # 모든 학생의 총점을 저장할 리스트
-   scores = []
-
+    scores = []
 
     for i in range(N):
         mid, final, homework = map(int, input().split())
@@ -25,9 +24,6 @@ for tc in range(1, T + 1):
     scores.sort(reverse=True)
 
     rank = scores.index(target)
-
-    # k번째 학생의 등수
-    rank = 0
 
     # 한 평점에 몇명인지 계산
     grade_cnt = N // 10
